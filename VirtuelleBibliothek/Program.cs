@@ -17,9 +17,9 @@ namespace VirtuelleBibliothek
             Inventar inventar = new Inventar();
             Ausgeliehen ausgeliehen = new Ausgeliehen();
             JSONString.ErstelleKatalog(bücherkatalog);
-            bool Beenden = false;
+            bool Exit = false;
             string Auswahl;
-            while (Beenden == false)
+            while (Exit == false)        //Code in this While-Loop is for the interface with user |  the bool Exit is set to false when User wish to
             {
                 bool OffenUnterprogramm = true;
                 string ZuBearbeiteneKategorie;
@@ -88,7 +88,7 @@ namespace VirtuelleBibliothek
                 }
                 else if (Auswahl == "q")
                 {
-                    Beenden = true;
+                    Exit = true;
                 }
                 else
                 {
