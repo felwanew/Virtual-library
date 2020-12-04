@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.Json;
@@ -24,12 +26,6 @@ namespace VirtuelleBibliothek
             string json = JsonConvert.SerializeObject(ExemplarListe);
             System.IO.File.WriteAllText(@"C:\Users\wanwitfe\source\repos\ExersiceJSON\ExersiceJSON\Buecherei\exemplare.json", json);
         }
-
-        /*
-        jsonString = JsonSerializer.Serialize(weatherForecast);
-
-        jsonString = JsonSerializer.Serialize(weatherForecast);
-        File.WriteAllText(fileName, jsonString);*/
     }
 }
 

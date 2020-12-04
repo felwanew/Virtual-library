@@ -16,7 +16,7 @@ namespace VirtuelleBibliothek
             Bücherkatalog bücherkatalog = new Bücherkatalog();
             Inventar inventar = new Inventar();
             Ausgeliehen ausgeliehen = new Ausgeliehen();
-            ErstelleKatalog(bücherkatalog);
+            JSONString.ErstelleKatalog(bücherkatalog);
             bool Beenden = false;
             string Auswahl;
             while (Beenden == false)

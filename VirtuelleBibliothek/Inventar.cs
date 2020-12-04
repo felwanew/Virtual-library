@@ -23,7 +23,7 @@ namespace VirtuelleBibliothek
         }
         public static void AutoExemplarHinzufügen(Buch buch)
         {
-            Exenplar exemplar1 = new Exemplar();
+            Exemplar exemplar1 = new Exemplar();
             exemplar1.ExemplarID = InventarExemplare.Count;
             exemplar1.ExemplarBuch = buch;
         }
